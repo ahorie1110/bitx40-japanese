@@ -1,10 +1,10 @@
-## Raduino_v1.27　対応ユーザー説明書
+## Raduino_v1.27　対応ユーザー説明書　(作成中)
 
 【重要】：このスケッチのバージョンは割込み処理のため ["PinChangeInterrupt"](https://playground.arduino.cc/Main/PinChangeInterrupt)のライブラリが必要です。このスケッチをコンパイルする前に、お使いのIDEにこのライブラリを[インストール](library-install.md)してください。
 
 このバージョンが更新されると、全てのキャリブレーション・データ、ドライブレベル等の設定は全て初期値に設定されます。更新する前に現在のキャリブレーション・データ等を記録しておいてください。更新が完了したら、“ファンクションボタン”を使用して、初期値から記録しておいた設定に戻してください。このスケッチでは基本的なLSBの機能はハードウエアの改造を行わなくても動作します。必要な（最小限の）ハードウエアの改造を行えば、ユーザーの選択により機能を追加して、このソフトウエアにより動作させることができます。それぞれの機能で必要なハードウエアの改造を以下のテーブルに示します。それぞれの改造の詳細は以下を参照してください。
 
-![Table of hardware modifications](hardware%20modification%20overview.PNG)
+![Table of hardware modifications](hardware%20modification%20overview_JPN.PNG)
 
 ## 10-TURN TUNING POT
 
