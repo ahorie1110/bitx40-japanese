@@ -4,11 +4,11 @@
 
 このバージョンが更新されると、全てのキャリブレーション・データ、ドライブレベル等の設定は全て初期値に設定されます。更新する前に現在のキャリブレーション・データ等を記録しておいてください。更新が完了したら、“ファンクションボタン”を使用して、初期値から記録しておいた設定に戻してください。このスケッチでは基本的なLSBの機能はハードウエアの改造を行わなくても動作します。必要な（最小限の）ハードウエアの改造を行えば、ユーザーの選択により機能を追加して、このソフトウエアにより動作させることができます。それぞれの機能で必要なハードウエアの改造を以下のテーブルに示します。それぞれの改造の詳細は以下を参照してください。
 
-![Table of hardware modifications](hardware.PNG)
+![Table of hardware modifications](hardware%20modification%overview.PNG)
 
 ## 10-TURN TUNING POT
 
-The default frequency span of the standard supplied 1-turn tuning pot is only 50 kHz.
+The default frequency span of the standrd supplied 1-turn tuning pot is only 50 kHz.
 If you install a 10-turn pot instead you can extend the span for full 40m band coverage.
 
 ![Image of 10-turn pot hookup](Vishay%20100K%2C%2010-turn%20pot%20wire%20up.jpg)
