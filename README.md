@@ -1,8 +1,8 @@
 # bitx40 - Japanese text version by Akira JJ1EPE
 
-BITX40　Raduino用“スケッチ”
+BITX40 sketch for Raduino
 
-このスケッチは、改造されていないBITX40 + raduinoボードであっても、常に動作する汎用の標準Raduinoソフトウェアを目的とししています。 ハードウエアを変更することなく、このスケッチは標準かつ基本的なLSB機能を提供します。 このスケッチは、USB、CW、RIT / SPLIT、KEYERなどの追加機能を提供しますが、これらは関連する（最小限の）ハードウエアの改造が行われた場合のみに機能します。
+This sketch is intended as universal, standard Raduino software that should always work, even on a unmodified out-of-the-box BITX40 + raduino board. Without any hardware modifications the sketch provides the standard basic LSB functionality. The sketch provides additional features such as USB, CW, RIT/SPLIT, KEYER etc., but these will only become functional when the related (minimal) hardware mods are made.
 
 ![Hardware mod overview](https://github.com/amunters/bitx40/blob/master/hardware%20modification%20overview.PNG) 
 
