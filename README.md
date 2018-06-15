@@ -1,6 +1,6 @@
 # bitx40 - Japanese text version by Akira JJ1EPE
 
-Bitx40 Raduio用スケッチ
+# Bitx40 Raduio用スケッチ
 
 このスケッチは、改造されていないBITX40 + raduinoボードであっても、常に動作する汎用の標準Raduinoソフトウェアを目的とししています。 ハードウエアを変更することなく、このスケッチは標準かつ基本的なLSB機能を提供します。 このスケッチは、USB、CW、RIT / SPLIT、KEYERなどの追加機能を提供しますが、これらは関連する（最小限の）ハードウエアの改造が行われた場合のみに機能します。
 
@@ -11,15 +11,15 @@ Bitx40 Raduio用スケッチ
 **Note 1:** v1.20以降、SI5351ライブラリをダウンロードしてインストールする必要がなくなったため、 現在はSI5351を駆動するための最小限のルーチンがス　ケッチに組み込まれています。
 **Note 2:** v1.27以降、ライブラリ[”PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt) は割込み処理に必要になりました。コンパイルする前にIDEにこのライブラリを[インストール(library-install.md)してください。
 
-
-##　ご寄付のお願い
+#ご寄付のお願い
 
 私は、趣味としてのアマチュア無線のソフトウェアを開発してアップデートし、そして無料で配布しています。
 もし、このソフトウェアを気に入っていただけましたら、知的障害や自閉症の子供のための施設に滞在している私の息子の家に小額でも結構ですのでご寄付いただければ幸いです。ご寄付いただいた浄財は、改良されたおもちゃ、三輪車、トランポリンまたはスイング等に使用させていただきます。このグループの6人の青少年から心より感謝致します。
 
  [![ご寄付](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTAMBM6QT8LP8)
 
-##　アップデート履歴
+# アップデート履歴
+
 v1.27.7
 - “PTTsense”モードが実装されている場合にのみ“割り込み”が有効になるようにコードを若干修正した。
 
