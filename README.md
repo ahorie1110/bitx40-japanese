@@ -154,9 +154,7 @@ v1.10
 - CW機能を追加した（ストレートモールスキー用）。この機能は、チューニングのためだけに使用することもできる。これには、CW-CARRIER線がRaduino出力D6（コネクタP3、ピン15）に接続されている必要がある。 （配線手順は、https://github.com/amunters/bitx40/blob/master/CW-CARRIER%20wiring.png を参照）。CWキー自体はRaduinoのピンA1（茶色の線）に接続する。両方のサイドバンド（CWUまたはCWL）ともCWモードで使用できる。
 - CW用のセミブレークには、NPNトランジスタを使用して既存のPTTスイッチを無効にするために、Raduino出力D7（コネクタP3、ピン16）からの“TX-RX”線を必要とする。（配線手順は、https://github.com/amunters/bitx40/blob/master/TX-RX%20line%20wiring.png を参照）。
 - CWサイドトーンには、Raduino出力D5（コネクターP3、ピン14）からスピーカーまでの配線が必要。(配線手順はhtps://github.com/amunters/bitx40/blob/master/sidetone%20wiring.png1 を参照）。希望するサイドトーンのピッチは“SETTINGS”メニューの“ファンクションボタン”で設定できる。
-- 送信中は周波数のチューニングを無効にする（送信時のフラッタや“FM-ing”を防ぐため。これには、ピンA0（黒線）に“PTT SENSE”線が接続されている必要があります。
-
-
+- 送信中は周波数のチューニングを無効にする（送信時のフラッタや“FM-ing”を防ぐため。これには、ピンA0（黒線）に“PTT SENSE”線が接続されている必要があります。（配線手順は、https://github.com/amunters/bitx40/blob/master/PTT%20SENSE%20wiring.png　を参照）。
 
 v1.09
 - RIT（SPLIT）機能を追加した。これには“PTT　SENSE”線がピンA0（黒線）に接続されている必要がある（配線方法はhttps://github.com/amunters/bitx40/blob/master/PTT%20SENSE%20wiring.png　を参照）。
