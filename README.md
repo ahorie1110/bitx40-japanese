@@ -110,7 +110,7 @@ v1.17.1
 - VFO、RIT、SPLIT、FINE TUNEなどを切り替えた後、正しい周波数に戻らなないという“shiftBase（）ルーチン”のv1.17の不具合を修正した。
 
 v1.17
- -“SPOT”ボタンを押している間は“SPOT”ボタンに "Fine Tune"機能を持たせるよう追加した。このとき、一時的に"FINE TUNE"モードになり、VFOを1Hzの精度で設定することがでる。この機能は、SSBモードでも機能する（ただし、サイドトーンは生成されない）。
+- “SPOT”ボタンを押している間は“SPOT”ボタンに "Fine Tune"機能を持たせるよう追加した。このとき、一時的に"FINE TUNE"モードになり、VFOを1Hzの精度で設定することがでる。この機能は、SSBモードでも機能する（ただし、サイドトーンは生成されない）。
  
 v1.16
 - 正確な“ゼロ・ビート”のための“CW SPOT TONE”ボタンを追加した。プッシュボタンをArduinoピンD4に接続する。 D4がグランドに接続されているときはSPOTトーンが聞こえる。受信局の信号のピッチに合わせてCWスポットトーンを調整することにより、自局の信号と他局の信号が正確に同じ周波数（ゼロビート）になる。
@@ -151,13 +151,13 @@ v1.11
 - PTT検出線の改造が行われていない場合に常に「TX」が表示される不具合を修正。
 
 v1.10
-- CW機能を追加した（ストレートモールスキー用）。この機能は、チューニングのためだけに使用することもできる。これには、CW-CARRIER線がRaduino出力D6（コネクタP3、ピン15）に接続されている必要がある。 （[配線手順]は、(https://github.com/amunters/bitx40/blob/master/CW-CARRIER%20wiring.png)を参照）。CWキー自体はRaduinoのピンA1（茶色の線）に接続する。両方のサイドバンド（CWUまたはCWL）ともCWモードで使用できる。
-- CW用のセミブレークには、NPNトランジスタを使用して既存のPTTスイッチを無効にするために、Raduino出力D7（コネクタP3、ピン16）からの“TX-RX”線を必要とする。（[配線手順]は、(https://github.com/amunters/bitx40/blob/master/TX-RX%20line%20wiring.png)を参照）
-- CWサイドトーンには、Raduino出力D5（コネクターP3、ピン14）からスピーカーまでの配線が必要。([配線手順]は(tps://github.com/amunters/bitx40/blob/master/sidetone%20wiring.png)参照）。希望するサイドトーンのピッチは“SETTINGS”メニューの“ファンクションボタン”で設定できる。
-- 送信中は周波数のチューニングを無効にする（送信時のフラッタや“FM-ing”を防ぐため。これには、ピンA0（黒線）に“PTT SENSE”線が接続されている必要があります。 （[配線方法]は、https://github.com/amunters/bitx40/blob/master/PTT%20SENSE%20wiring.png)を参照）。
+- CW機能を追加した（ストレートモールスキー用）。この機能は、チューニングのためだけに使用することもできる。これには、CW-CARRIER線がRaduino出力D6（コネクタP3、ピン15）に接続されている必要がある。 （![配線手順]は、(https://github.com/amunters/bitx40/blob/master/CW-CARRIER%20wiring.png)を参照）。CWキー自体はRaduinoのピンA1（茶色の線）に接続する。両方のサイドバンド（CWUまたはCWL）ともCWモードで使用できる。
+- CW用のセミブレークには、NPNトランジスタを使用して既存のPTTスイッチを無効にするために、Raduino出力D7（コネクタP3、ピン16）からの“TX-RX”線を必要とする。（![配線手順]は、(https://github.com/amunters/bitx40/blob/master/TX-RX%20line%20wiring.png)を参照）
+- CWサイドトーンには、Raduino出力D5（コネクターP3、ピン14）からスピーカーまでの配線が必要。(![配線手順]は(tps://github.com/amunters/bitx40/blob/master/sidetone%20wiring.png)参照）。希望するサイドトーンのピッチは“SETTINGS”メニューの“ファンクションボタン”で設定できる。
+- 送信中は周波数のチューニングを無効にする（送信時のフラッタや“FM-ing”を防ぐため。これには、ピンA0（黒線）に“PTT SENSE”線が接続されている必要があります。 （![配線方法]は、https://github.com/amunters/bitx40/blob/master/PTT%20SENSE%20wiring.png)を参照）。
 
 v1.09
-- RIT（SPLIT）機能を追加した。これには“PTT　SENSE”線がピンA0（黒線）に接続されている必要がある（[配線方法]は(https://github.com/amunters/bitx40/blob/master/PTT%20SENSE%20wiring.png)を参照）。
+- RIT（SPLIT）機能を追加した。これには“PTT　SENSE”線がピンA0（黒線）に接続されている必要がある（![配線方法]は(https://github.com/amunters/bitx40/blob/master/PTT%20SENSE%20wiring.png)を参照）。
 - “SETTINGS”メニューでのチューニング範囲設定の簡単化。
 - EEPROMの寿命を伸ばすために、EEPROMへの書込み回数を少なくした。
 
