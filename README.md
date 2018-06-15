@@ -20,8 +20,8 @@ Bitx40 Raduio用スケッチ
  [![ご寄付](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTAMBM6QT8LP8)
 
 ##　アップデート履歴
-1.27.7
-　・“PTTsense”モードが実装されている場合にのみ“割り込み”が有効になるようにコードを若干修正した。
+v1.27.7
+- “PTTsense”モードが実装されている場合にのみ“割り込み”が有効になるようにコードを若干修正した。
 
 1.27.6
 -　周波数が上限または下限に達した場合には、si5351が受信周波数のチューニング動作を継続しないとようにコードを改善した。
