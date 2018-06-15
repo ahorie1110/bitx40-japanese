@@ -32,97 +32,60 @@ v1.27.6
 v1.27.5
 - 33行目：高速チューニングの“ステップ遅延時間”を設定する機能を追加した（チューニング・ノブが上限/下限の位置にあるとき）（tks Bob、N4FV）
 
-1.27.4
-　・　行32：LCDの2行目にブランクの場合にはテキスト（例：コールサイン）を表示する機能を追加した（tks Richard、VE3YSH）。
-　・　コードの若干の整理
+v1.27.4
+- 行32：LCDの2行目にブランクの場合にはテキスト（例：コールサイン）を表示する機能を追加した（tks Richard、VE3YSH）。
+- コードの若干の整理
 
-1.27.3
-　・　si5351の25MHz水晶の負荷容量の設定を修正した（tks Daniel KB3MUN）。
-　・　キャリブレーションの初期値を180 ppmに変更した。
+v1.27.3
+- si5351の25MHz水晶の負荷容量の設定を修正した（tks Daniel KB3MUN）。
+- キャリブレーションの初期値を180 ppmに変更した。
 
-1.27.2
-　・　“QSK DELAY”タイムが短いと、CWからSSBモードに復帰しなかったバグを修正した（テストの協力tks　Gary N3GO　）
+v1.27.2
+- “QSK DELAY”タイムが短いと、CWからSSBモードに復帰しなかったバグを修正した（テストの協力tks　Gary N3GO　）
 
-1.27.1
-　・　CW-SPLITモードでスプリアスキャリアバーストが抑制されなかったバグを修正。
-　・　semiQSKモードでは、キャンセルされずに（キャリアバーストを防止するために）、最初のCWエレメントを65msの遅れに設定した。
-　・　semiQSKモードで無線機がLSBからCWLに確実に切り替わらなかった不具合を修正した。
-　・　VFOが10MHz以上になるとディスプレイの表示に不具合が生じるバグを修正した。
+v1.27.1
+- CW-SPLITモードでスプリアスキャリアバーストが抑制されなかったバグを修正。
+- semiQSKモードでは、キャンセルされずに（キャリアバーストを防止するために）、最初のCWエレメントを65msの遅れに設定した。
+- semiQSKモードで無線機がLSBからCWLに確実に切り替わらなかった不具合を修正した。
+- VFOが10MHz以上になるとディスプレイの表示に不具合が生じるバグを修正した。
 
-1.27
- ・　RXからTXへの切り替え時にスプリアスキャリアの抑制を改善した。この関数は、割り込み処理のためにライブラリ[ “PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt)が必要である。 本スケッチをコンパイル編集する前にIDEを使って[インストール](library-install.md)する。
-
-V1.26
-　・　メニューの構成を整理し、必要なハードウエアの改造が行われていない場合には、それに関連するメニューをスキップするようにした。
-　・　TXに切り替わると、スプリアスキャリアバーストを抑制するようにした（tksDave M0WID）。
-　・　VFOキャリブレーションでは、広範囲の周波数レンジでの精度向上のために“倍率補正”（ppm）を使用するように改良した(tks Jerry KE7ER)。
-　・ EEPROMへのユーザー設定のセーブ/リストア方法をの改良した(tks Pavel CO7WT）。
-
-v1.25.1
-　・　タッチキーヤー・キャリブレーションの若干の不具合を修正した。
-
-v1.25
-　・　容量式タッチキーヤーのサポートを追加した。
-
-v1.24
-　・　よりスムーズなキーイングのためにCWキーのタイミング特性を最適化した（tkHidehiko、JA9MAT）。
-　・　ダイヤルロック機能を追加した：ファンクションボタンとSPOTボタンを同時に押すと、ダイヤルがロックされる。もう一度ファンクションボタンを押すとロックが解除される。
-
-v1.23.1
-　・　EEPROMのロケーションの誤りによって”auto-space”の設定が「最大周波数」の設定により妨げられる不具合を修正した。
-　・　CWキーが押されたときの、SETTINGSメニュー（CWパラメータ）での表示の不具合（乱雑に表示される）を修正した。
-
-v1.23
-　・　“SETTINGS”メニューでCWキーの”auto-space”機能の有効と無効の切替ができるように改良した（初期値の設定はOFF）。
-　・　Vibroplexのバグ・エミュレーションをCWキーヤーに追加した。　
-　・　ユーザー設定パラメータを任意に変更できるように全ての設定パラメータをスケッチの最上部に移動した。
-　・　キーヤー・ルーチンのコードを最適化した（tks Pavel CO7WT)）。
-
-v1.22
-　・　“SETTINGS”メニューから、「パドル」または「反転パドル」を選択できる機能を追加した。
-
-v1.21
-　・　エレキーの機能を追加した。CWキーの初期値はストレートキー。エレキーを使用する場合は、ピンA1（dit）とピンD3（dah）にパドルキーヤーを接続する。“SETTINGS”メニューで、CWキーのタイプを「パドル」に設定する。キーイング中に、ファンクションボタン（早くする）またはSPOTボタン（遅くする）を押すと、キーヤースピードを調整できる。キーヤー速度は1〜50 WPMの幅で設定できる。
-　・　“SETTINGS”メニューでチューニングできる最大周波数と最小周波数の設定できるようにした（スケッチを編集する必要はなくなった）。
-　・　チューニング・ノブの最大位置と最小位置での反応を改善した。
+v1.27
+- RXからTXへの切り替え時にスプリアスキャリアの抑制を改善した。この関数は、割り込み処理のためにライブラリ[ “PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt)が必要である。 本スケッチをコンパイル編集する前にIDEを使って[インストール](library-install.md)する。
 
 v1.26
-- Rearranged the menu structure, skip menu items that aren't available when related mods are not installed
-- Suppress the spurious carrier burst when the radio swithes to TX (tks Dave M0WID)
-- For VFO calibration, use multiplicative correction (ppm) for better accuracy over a wide frequency range (tks Jerry KE7ER)
-- Improved method for saving/restoring user settings to EEPROM (tks Pavel CO7WT)
+- メニューの構成を整理し、必要なハードウエアの改造が行われていない場合には、それに関連するメニューをスキップするようにした。
+- TXに切り替わると、スプリアスキャリアバーストを抑制するようにした（tksDave M0WID）。
+- VFOキャリブレーションでは、広範囲の周波数レンジでの精度向上のために“倍率補正”（ppm）を使用するように改良した(tks Jerry KE7ER)。
+- EEPROMへのユーザー設定のセーブ/リストア方法をの改良した(tks Pavel CO7WT）。
 
 v1.25.1
-- some minor bug corrections to the touch keyer calibration code.
+- タッチキーヤー・キャリブレーションの若干の不具合を修正した。
 
 v1.25
-- Added Capacitive Touch Keyer support.
+- 容量式タッチキーヤーのサポートを追加した。
 
 v1.24
-- Optimized CW keyer timing characteristics for smoother keying (tks Hidehiko, JA9MAT)
-- Added DIAL LOCK function: Press the Function Button and then the SPOT button simultanuously to lock the dial. Press the FB again to unlock.
+- よりスムーズなキーイングのためにCWキーのタイミング特性を最適化した（tkHidehiko、JA9MAT）。
+- ダイヤルロック機能を追加した：ファンクションボタンとSPOTボタンを同時に押すと、ダイヤルがロックされる。もう一度ファンクションボタンを押すとロックが解除される。
 
 v1.23.1
-- corrected bug that the 'auto-space' setting interfered with the 'maximum frequency' setting due to incorrect EEPROM location
-- corrected bug that the display became cluttered up in the SETTINGS menu (CW parameters), when CW key was down
+- EEPROMのロケーションの誤りによって”auto-space”の設定が「最大周波数」の設定により妨げられる不具合を修正した。
+- CWキーが押されたときの、SETTINGSメニュー（CWパラメータ）での表示の不具合（乱雑に表示される）を修正した。
 
 v1.23
-- It is now possible to enable/disable the keyer's auto-space function from the SETTINGS menu (default setting is OFF).
-- Added Vibroplex bug emulation to the CW keyer
-- Moved all user setting parameters to the top of the sketch for in case you want to edit them manually
-- Optimized some code in the keyer routine (tks Pavel CO7WT)
+- “SETTINGS”メニューでCWキーの”auto-space”機能の有効と無効の切替ができるように改良した（初期値の設定はOFF）。
+- Vibroplexのバグ・エミュレーションをCWキーヤーに追加した。
+- ユーザー設定パラメータを任意に変更できるように全ての設定パラメータをスケッチの最上部に移動した。
+- キーヤー・ルーチンのコードを最適化した（tks Pavel CO7WT)）。
 
 v1.22
-- Added some functionality allowing the user to choose "paddle" or "reversed paddle" from the SETTINGS menu
+- “SETTINGS”メニューから、「パドル」または「反転パドル」を選択できる機能を追加した。
 
 v1.21
-- Added automatic CW keyer functionality.
-  The default setup is for straight key operation. If you want to use the automatic keyer, connect a paddle keyer to
-  pin A1 (dit) and pin D3 (dah). In the SETTINGS menu, set CW-key type to "paddle".
-  While keying, the keyer speed can be adjusted by pressing the Function Button (speed up) or the SPOT button (speed down).
-  Keyer speed can be set from 1 - 50 WPM.
-- It is now possible to set the minimum and maximum tuning frequency via the SETTINGS menu (no longer need to edit the sketch).
-- Improved the tuning pot behaviour at the lower and upper ends of the pot.
+-エレキーの機能を追加した。CWキーの初期値はストレートキー。エレキーを使用する場合は、ピンA1（dit）とピンD3（dah）にパドルキーヤーを接続する。“SETTINGS”メニューで、CWキーのタイプを「パドル」に設定する。キーイング中に、ファンクションボタン（早くする）またはSPOTボタン（遅くする）を押すと、キーヤースピードを調整できる。キーヤー速度は1〜50 WPMの幅で設定できる。
+- “SETTINGS”メニューでチューニングできる最大周波数と最小周波数の設定できるようにした（スケッチを編集する必要はなくなった）。
+- チューニング・ノブの最大位置と最小位置での反応を改善した。
+
 
 v1.20.1
 - Added some constraints so that frequency limits are respected during fast up/down scanning
