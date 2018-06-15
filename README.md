@@ -1,17 +1,15 @@
 # bitx40 - Japanese text version by Akira JJ1EPE
 
-BITX40 sketch for Raduino
+Bitx40 Raduio用スケッチ
 
-This sketch is intended as universal, standard Raduino software that should always work, even on a unmodified out-of-the-box BITX40 + raduino board. Without any hardware modifications the sketch provides the standard basic LSB functionality.
-The sketch provides additional features such as USB, CW, RIT/SPLIT, KEYER etc., but these will only become functional when the related (minimal) hardware mods are made.
+このスケッチは、改造されていないBITX40 + raduinoボードであっても、常に動作する汎用の標準Raduinoソフトウェアを目的とししています。 ハードウエアを変更することなく、このスケッチは標準かつ基本的なLSB機能を提供します。 このスケッチは、USB、CW、RIT / SPLIT、KEYERなどの追加機能を提供しますが、これらは関連する（最小限の）ハードウエアの改造が行われた場合のみに機能します。
 
 ![Hardware mod overview](hardware%20modification%20overview.PNG) 
 
-See the [operating and modification instructions](operating-instructions.md) and the [software installation instructions](installation_instructions/0-software-installation.md) for full details.
+詳細は["operating-instructions.md"](operating-instructions.md) と[”software installation instructions"](installation_instructions/0-software-installation.md) を参照してください。
 
-**Note 1:** Since v1.20 it is no longer required to download and install the SI5351 library. Minimalist routines to drive the SI5351 are now embedded in the sketch.
-
-**Note 2:** Since v1.27 the library [PinChangeInterrupt](https://playground.arduino.cc/Main/PinChangeInterrupt) is required for interrupt handling. Use your IDE to [install](library-install.md) it before compiling this sketch!
+**Note 1:** v1.20以降、SI5351ライブラリをダウンロードしてインストールする必要がなくなったため、 現在はSI5351を駆動するための最小限のルーチンがス　ケッチに組み込まれています。
+**Note 2:** v1.27以降、ライブラリ[PinChangeInterrupt](https://playground.arduino.cc/Main/PinChangeInterrupt) は割込み処理に必要になりました。コンパイルする前にIDEにこのライブラリを[インストール(library-install.md)してください。
 
 ## Donate
 
