@@ -9,47 +9,82 @@ Bitx40 Raduio用スケッチ
 詳細は["operating-instructions.md"](operating-instructions.md) と[”software installation instructions"](installation_instructions/0-software-installation.md) を参照してください。
 
 **Note 1:** v1.20以降、SI5351ライブラリをダウンロードしてインストールする必要がなくなったため、 現在はSI5351を駆動するための最小限のルーチンがス　ケッチに組み込まれています。
-**Note 2:** v1.27以降、ライブラリ[PinChangeInterrupt](https://playground.arduino.cc/Main/PinChangeInterrupt) は割込み処理に必要になりました。コンパイルする前にIDEにこのライブラリを[インストール(library-install.md)してください。
+**Note 2:** v1.27以降、ライブラリ[”PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt) は割込み処理に必要になりました。コンパイルする前にIDEにこのライブラリを[インストール(library-install.md)してください。
 
-## Donate
 
-I develop and maintain ham radio software as a hobby and distribute it for free. However, if you like this software, please consider to donate a small amount to my son's home who stays in an institute for kids with an intellectual disability and autism. The money will be used for adapted toys, a tricycle, a trampoline or a swing. Your support will be highly appreciated by this group of 6 young adolescents!
+##　ご寄付のお願い
 
- [![Donate](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTAMBM6QT8LP8)
+私は、趣味としてのアマチュア無線のソフトウェアを開発してアップデートし、そして無料で配布しています。
+もし、このソフトウェアを気に入っていただけましたら、知的障害や自閉症の子供のための施設に滞在している私の息子の家に小額でも結構ですのでご寄付いただければ幸いです。ご寄付いただいた浄財は、改良されたおもちゃ、三輪車、トランポリンまたはスイング等に使用させていただきます。このグループの6人の青少年から心より感謝致します。
 
-## Revision record
+ [![ご寄付](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PTAMBM6QT8LP8)
 
+##　アップデート履歴
 1.27.7
-- Slightly revised the code so that interrupts are only enabled when the PTTsense mod is installed
+　・“PTTsense”モードが実装されている場合にのみ“割り込み”が有効になるようにコードを若干修正した。
 
 1.27.6
-- improved the code so that the si5351 does not keep receiving tuning updates once the frequency has reached the upper or lower limit
-- corrected a bug that when semiQSK is ON, switching between modes did not work correctly for CWL/CWU.
-- increased the default delay time for the Function Button for easier operation
-- updated the instructions for the CW-CARRIER mod: Advise to use a 4.7K resistor instead of 10K so as to ensure full output power in CW
+　・　周波数が上限または下限に達した場合には、si5351が受信周波数のチューニング動作を継続しないとようにコードを改善した。
+　・　semiQSKがONのときにCWL/ CWUのモード切り替えが正しく行われなかった不具合を修正した。
+　・　より操作しやすいように“ファンクションボタン”の遅延時間の初期値を大きくした。
+　・　“CW-CARRIER”モードで手順を更新した。CWで最大出力が出るように10Kの代わりに4.7Kの抵抗を使用してください。
 
 1.27.5
-- line 33: Added the ability to set the step delay time for fast tuning (when the tuning pot is at the upper/lower limit) (tks Bob, N4FV)
+　・　33行目：高速チューニングの“ステップ遅延時間”を設定する機能を追加した（チューニング・ノブが上限/下限の位置にあるとき）（tks Bob、N4FV）
 
 1.27.4
-- Line 32: Added the ability to specify text (e.g. your callsign) on the second line of the LCD when it would otherwise be blank (tks Richard, VE3YSH).
-- some code clean up
+　・　行32：LCDの2行目にブランクの場合にはテキスト（例：コールサイン）を表示する機能を追加した（tks Richard、VE3YSH）。
+　・　コードの若干の整理
 
 1.27.3
-- corrected the si5351 25mhz crystal load capacitance setting (tks Daniel KB3MUN)
-- changed the initial calibration value to 180 ppm
+　・　si5351の25MHz水晶の負荷容量の設定を修正した（tks Daniel KB3MUN）。
+　・　キャリブレーションの初期値を180 ppmに変更した。
 
 1.27.2
-- fixed a bug that with short QSK DELAY time, the radio did not return from CW to SSB mode (tks Gary N3GO for testing)
+　・　“QSK DELAY”タイムが短いと、CWからSSBモードに復帰しなかったバグを修正した（テストの協力tks　Gary N3GO　）
 
 1.27.1
-- fixed a bug that the spurious carrier burst was not suppressed in CW-SPLIT mode
-- In semiQSK mode, the initial CW element is now delayed by 65ms (to prevent the carrier burst), instead of canceled
-- fixed a bug that the radio did not reliably switch from LSB to CWL in semiQSK mode
-- fixed a bug that the display got messed up when the VFO is above 10 MHz
+　・　CW-SPLITモードでスプリアスキャリアバーストが抑制されなかったバグを修正。
+　・　semiQSKモードでは、キャンセルされずに（キャリアバーストを防止するために）、最初のCWエレメントを65msの遅れに設定した。
+　・　semiQSKモードで無線機がLSBからCWLに確実に切り替わらなかった不具合を修正した。
+　・　VFOが10MHz以上になるとディスプレイの表示に不具合が生じるバグを修正した。
 
 1.27
-- Improved the suppression of the spurious carrier when switching from RX to TX. This function requires the library [PinChangeInterrupt](https://playground.arduino.cc/Main/PinChangeInterrupt) for interrupt handling. Use your IDE to [install](library-install.md) it before compiling this sketch!
+ ・　RXからTXへの切り替え時にスプリアスキャリアの抑制を改善した。この関数は、割り込み処理のためにライブラリ[ “PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt)が必要である。 本スケッチをコンパイル編集する前にIDEを使って[インストール](library-install.md)する。
+
+V1.26
+　・　メニューの構成を整理し、必要なハードウエアの改造が行われていない場合には、それに関連するメニューをスキップするようにした。
+　・　TXに切り替わると、スプリアスキャリアバーストを抑制するようにした（tksDave M0WID）。
+　・　VFOキャリブレーションでは、広範囲の周波数レンジでの精度向上のために“倍率補正”（ppm）を使用するように改良した(tks Jerry KE7ER)。
+　・ EEPROMへのユーザー設定のセーブ/リストア方法をの改良した(tks Pavel CO7WT）。
+
+v1.25.1
+　・　タッチキーヤー・キャリブレーションの若干の不具合を修正した。
+
+v1.25
+　・　容量式タッチキーヤーのサポートを追加した。
+
+v1.24
+　・　よりスムーズなキーイングのためにCWキーのタイミング特性を最適化した（tkHidehiko、JA9MAT）。
+　・　ダイヤルロック機能を追加した：ファンクションボタンとSPOTボタンを同時に押すと、ダイヤルがロックされる。もう一度ファンクションボタンを押すとロックが解除される。
+
+v1.23.1
+　・　EEPROMのロケーションの誤りによって”auto-space”の設定が「最大周波数」の設定により妨げられる不具合を修正した。
+　・　CWキーが押されたときの、SETTINGSメニュー（CWパラメータ）での表示の不具合（乱雑に表示される）を修正した。
+
+v1.23
+　・　“SETTINGS”メニューでCWキーの”auto-space”機能の有効と無効の切替ができるように改良した（初期値の設定はOFF）。
+　・　Vibroplexのバグ・エミュレーションをCWキーヤーに追加した。　
+　・　ユーザー設定パラメータを任意に変更できるように全ての設定パラメータをスケッチの最上部に移動した。
+　・　キーヤー・ルーチンのコードを最適化した（tks Pavel CO7WT)）。
+
+v1.22
+　・　“SETTINGS”メニューから、「パドル」または「反転パドル」を選択できる機能を追加した。
+
+v1.21
+　・　エレキーの機能を追加した。CWキーの初期値はストレートキー。エレキーを使用する場合は、ピンA1（dit）とピンD3（dah）にパドルキーヤーを接続する。“SETTINGS”メニューで、CWキーのタイプを「パドル」に設定する。キーイング中に、ファンクションボタン（早くする）またはSPOTボタン（遅くする）を押すと、キーヤースピードを調整できる。キーヤー速度は1〜50 WPMの幅で設定できる。
+　・　“SETTINGS”メニューでチューニングできる最大周波数と最小周波数の設定できるようにした（スケッチを編集する必要はなくなった）。
+　・　チューニング・ノブの最大位置と最小位置での反応を改善した。
 
 v1.26
 - Rearranged the menu structure, skip menu items that aren't available when related mods are not installed
