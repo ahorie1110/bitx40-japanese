@@ -1,6 +1,8 @@
-# bitx40 - Japanese text version by Akira JJ1EPE
+# bitx40
 
-# Bitx40 Raduio用スケッチ
+このREADME.mdはPE1NWLのAllardさんが作成された文章をJJ1EPE堀江が翻訳したものです。ご質問等がありましたらjj1epe＠jarl.comまでどうぞ(＠は小文字)。
+
+BITX40 Raduio用スケッチ
 
 このスケッチは、改造されていないBITX40 + raduinoボードであっても、常に動作する汎用の標準Raduinoソフトウェアを目的とししています。 ハードウエアを変更することなく、このスケッチは標準かつ基本的なLSB機能を提供します。 このスケッチは、USB、CW、RIT / SPLIT、KEYERなどの追加機能を提供しますが、これらは関連する（最小限の）ハードウエアの改造が行われた場合のみに機能します。
 
