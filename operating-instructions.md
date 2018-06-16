@@ -62,7 +62,6 @@
 * +5V (orange)
 * ?? (yellow): Unused
 
-![CW Carrier Wiring](CW-CARRIER%20wiring.png)
 
 ## PTT SENSE WIRING:
 （PTT検出の配線）
