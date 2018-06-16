@@ -25,6 +25,7 @@
 
 ## PIN LAYOUT
 (ピン配置)
+
 ![Raduino pin layout](raduino_pin_layout.png)
 
 ### Connector P1 (8 pin)
