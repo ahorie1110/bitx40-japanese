@@ -6,7 +6,7 @@ BITX40 Raduio用スケッチ
 
 このスケッチは、改造されていないBITX40 + raduinoボードであっても、常に動作する汎用の標準Raduinoソフトウェアを目的とししています。 ハードウエアを変更することなく、このスケッチは標準かつ基本的なLSB機能を提供します。 このスケッチは、USB、CW、RIT / SPLIT、KEYERなどの追加機能を提供しますが、これらは関連する（最小限の）ハードウエアの改造が行われた場合のみに機能します。
 
-![Hardware mod overview](hard.JPG) 
+![Hardware mod overview](https://github.com/ahorie1110/bitx40-japanese/blob/master/hard.jpg) 
 
 詳細は["operating-instructions.md"](operating-instructions.md) と[”software installation instructions"](installation_instructions/0-software-installation.md) を参照してください。
 
