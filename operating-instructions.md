@@ -162,167 +162,139 @@ D4ピン（P3コネクタ）とグランドの間にモーメンタリー・プ�
 通常の運用モードの場合：
 * 短く１回押す　―　VFO A/Bの切替
 * 短く２回押す　―　RIT ON、“ファンクションボタン”を再度押すとRIT OFF
-　　　　　　　　　　　　　　　＊この機能を使用するにはPTT検出の改造が必要
+                    ＊この機能を使用するにはPTT検出の改造が必要
 * 短く３回押す　―　SPLIT ON/OFFの切替
-　　　　　　　　　　　　　　　＊の機能を使用するにはPTT検出の改造が必要
+                    ＊の機能を使用するにはPTT検出の改造が必要
 * 短く４回押す　―　LSB-USB-CWL-CWUのモード変更　（ボタンの回転で順番にセレクト）
 * 短く５回押す　―　周波数SCANモードの開始
 * 短く６回押す　―　VFO　A/Bモニタリングモードの開始
 * 長く押す（1秒以上）　―　VFO AとBを同じにする
 
 ## 設定モード
+
 “SETTINGS”メニューに入るには３秒以上ファンクションボタンを押します。
 
+
 ## 周波数スキャン
-　１回短くボタンを押して周波数SCANのパラメータを設定します（下限、上限、ステップ幅、ステップ遅延）
-* チューニング・ノブを使用して、スキャンの下限の周波数を設定する
-* ファンクションボタンを押す
-* チューニング・ノブを使用して、スキャンの上限の周波数を設定する
-* ファンクションボタンを押す
-* チューニング・ノブを使用して、スキャンのステップ幅を設定する
-* ファンクションボタンを押す
-* チューニング・ノブを使用して、スキャンの遅延幅を設定する（A/Bモニタリングモードでも使用）
-* ファンクションボタンを押して、設定を記録する。
+
+１回短くボタンを押して周波数SCANのパラメータを設定します（下限、上限、ステップ幅、ステップ遅延）
+
+- チューニング・ノブを使用して、スキャンの下限の周波数を設定する
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、スキャンの上限の周波数を設定する
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、スキャンのステップ幅を設定する
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、スキャンの遅延幅を設定する（A/Bモニタリングモードでも使用）
+- ファンクションボタンを押して、設定を記録する。
 
 
+## ＣＷの設定
 
-### Operating Mode
+2回短くボタンを押してＣＷのパラメータを設定します（サイドトーン・ピッチ、電鍵タイプ、セミQSK　ON/OFF）
+＊この機能を使用するにはPTT検出の改造が必要です。
 
-In normal operation mode:
+- チューニング・ノブを使用して、電鍵使用時には“straight”、エレキー使用時には”paddle”、左利き用には“rev.paddle”、あるいは”bug”または”reb.bug”を選択する
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、Auto-space ON/OFFを選択する
+  ＊エレキーが選択されているときのみ
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、タッチ・キーの感度を設定する（0=OFF）
+　＊タッチセンサーの改造がされている場合のみ
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、semiQSK　ON/OFFを選択する
+　＊CW・PTTバイパスの改造が行われている場合のみ
+- ファンクションボタンを押す
+- チューニング・ノブを使用して、タイムアウト時間（ms）を設定する
+　＊semiQSKがONの場合のみ
+- ファンクションボタンを押して、設定を記録する。
+- チューニング・ノブを使用して、サイドトーン・ピッチを設定する
+- ファンクションボタンを押す
 
-* 1 short press - toggle VFO A/B
-* 2 short presses - RIT on (PTT sense is required for this function) (press FB again to switch RIT off)
-* 3 short presses - toggle SPLIT on/off (PTT sense is required for this function)
-* 4 short presses - switch mode (rotate through LSB-USB-CWL-CWU)
-* 5 short presses - start frequency SCAN mode
-* 6 short presses - start VFO A/B monitoring mode
-* long press (> 1 second) - VFO A=B
+
+## VFOキャリブレーション、LSB
+
+３回、短くボタンを押す－LSBモードでのVFO周波数のキャリブレーションを行う
+- 他のトランシーバを使用して任意の周波数（例えば7100.0KHz）でキャリアを発生させる。または、ローカル局に任意の周波数でキャリアを試験送信してもらう。
+- キャリブレーションを行う前に、LSBモードでVFOを7100.0KHzに設定する（この時点では受信信号はゼロ・ビートになっていない）
+- 3回ボタンを短く押して、LSBキャリブレーションモードに入る
+- チューニング・ノブを使用して、正確にゼロ・ビートになるように調整を行う（ppm）
+- ファンクションボタンを押して設定を記録する
 
 
-### Settings Mode
+## VFOキャリブレーション、USB
 
-To enter SETTINGS menu, press and hold the Function Button for a VERY long (>3 seconds).
- 
-#### Frequency Scan
+４回、短くボタンを押す－USBモードでのVFO周波数のキャリブレーションを行う
 
-1 short press sets frequency SCAN parameters (lower limit, upper limit, step size, step delay)
+- USBキャリブレーションはLSBキャリブレーションに依存しますので、最初にLSBキャリブレーションが完了していることを確認してください。
+- 他のトランシーバを使用して任意の周波数（例えば7100.0KHz）でキャリアを発生させる。または、ローカル局に任意の周波数でキャリアを試験送信してもらう
+- キャリブレーションを行う前に、USBモードでVFOを7100.0KHzに設定する（この時点では受信信号はゼロ・ビートになっていない）
+- ４回ボタンを短く押して、USBキャリブレーションモードに入る
+- チューニング・ノブを使用して、正確にゼロ・ビートになるように調整を行う（ppm）
+- ファンクションボタンを押して設定を記録する
 
- - using the tuning pot, set the desired lower frequency scan limit
- - press the FB
- - using the tuning pot, set the desired upper frequency scan limit
- - press the FB
- - using the tuning pot, set the desired scan step size
- - press the FB
- - using the tuning pot, set the desired scan step delay (also used for A/B monitoring mode)
- - press the FB again to save the settings
 
-#### CW Configuration
+## VFOドライブレベル，LSB
 
-2 short presses - set CW paramaters (sidetone pitch, CW-key type, semiQSK on/off, QSK delay)
-   (only available when PTTsense line is installed)
+５回、ボタンを短く押す－LSBモードでのVFOドライブレベルを設定する
 
- - using the tuning pot, select "straight" for straight CW key operation, "paddle" for automatic CW keyer,
-   "rev. paddle" for left-handed CW-operators, "bug", or "rev. bug".
- - press the FB
- - using the tuning pot, select Auto-space ON or OFF (only when automatic CW keyer was selected)
- - press the FB
- - using the tuning pot, set the desired touch keyer sensitivity (0=OFF) (only when touch sensor mod is installed)
- - press the FB
- - using the tuning pot, select semiQSK ON or OFF (only when TX-RX mod is installed)
- - press the FB
- - using the tuning pot, set the desired timeout value (ms) (only when semiQSK in ON)
- - press the FB again to save the settings
- - using the tuning pot, set the desired sidetone pitch
- - press the FB
+- 7199KHzに周波数を合わせる。ほとんどのBITX40のLSBモードでは強力な”birdie”が聞こえる
+- ファンクションボタンを3回短く押してVFOドライブレベル調整モードに入る
+- LSBモードでのドライブレベルの初期値は4mA
+- チューニング・ノブを使用して、“birdie”の強さが小さくなるようにドライブレベルを選択する（2,4,6,8mA）
+- ファンクションボタンを押して設定を記録する
 
-#### VFO Calibration, LSB
 
-3 short presses - VFO frequency calibration in LSB mode
+## VFOドライブレベル，USB
 
-  - use another transceiver to generate a carrier at a known frequency (for example 7100.0 kHz)
-    (or ask a friend to transmit a carrier at a known frequency)
-  - before going into the calibration mode, first set the VFO to 7100.0 kHz in LSB mode
-    (the received signal may not yet be zero beat at this point)
-  - go into the LSB calibration mode (3 short press)
-  - using the tuning pot, adjust the correction value (ppm) for exactly zero beat
-  - press the Function Button again to save the setting
+６回、ボタンを短く押す－USBモードでのVFOドライブレベルを設定する
 
-#### VFO Calibration, USB
-  
-4 short presses - VFO frequency calibration in USB mode
+- 弱い信号を受信する
+- ファンクションボタンを4回短く押してVFOドライブレベル調整モードに入る
+- USBモードでのドライブレベルの初期値は8mA
+- チューニング・ポットを使用して、信号のノイズ比が最大になるようにドライブレベルを選択する（2,4,6,8mA）
+- ファンクションボタンを押して設定を記録する
+　＊参考：USBモードでドライブレベルが最大の8mＡでも不十分な場合には、C91とC92を外すと改善するかもしれません。これらのコンデンサは高周波数でのVFO信号を低減しています。これらのコンデンサは実施にはアナログVFOのみに必要です。アナログVFOの代わりにRaduuinoのDDSを使用している場合には、これらのコンデンサは問題なく取り外すことができます。
 
-  - USB calibration depends on LSB calibration, so make sure that LSB calibration has been done first!
-  - use another transceiver to generate a carrier at a known frequency (for example 7100.0 kHz)
-    (or ask a friend to transmit a carrier at a known frequency)
-  - before going into the calibration mode, first set the VFO to 7100.0 kHz in USB mode
-    (the received signal may not yet be zero beat at this point)
-  - go into the USB calibration mode (4 short presses)
-  - using the tuning pot, adjust the USB offset for exactly zero beat
-  - press the Function Button again to save the setting
 
-#### VFO Drive Level, LSB
-  
-5 short presses - set VFO drive level in LSB mode
+## チューニング幅
 
-  - tune to 7199 kHz, on most BITX40 transceivers a strong birdie is heard in LSB mode
-  - give 3 short presses to the FB to enter the VFO drive level adjustment
-  - the default drive level in LSB mode is 4mA
-  - using the tuning pot, try different drive levels (2,4,6,8 mA) to minimize the strength of the birdie
-  - press the FB again to save the setting
+７回、ボタンを短く押す－チューニング幅を設定する（最小周波数、最高周波数、周波数幅）
 
-#### VFO Drive Level, USB  
+- チューニング・ノブを使用して、最小周波数を設定し、ファンクションボタンを押す。
+- チューニング・ノブを使用して、最高周波数を設定し、ファンクションボタンを押す。ノブの周波数幅は初期値では50KHzです。これは１回転のノブ（ポテンションメーター）であればOKですが、もし複数回転のノブを使用する場合にはポット幅を拡げることができます。
+- チューニング・ノブを使用して、希望するポット幅を設定します。１回転ノブの場合には50KHz、10回転ノブの場合には200KHzが良いでしょう。もし、主にCWで運用する場合には、ポット幅は10～25KHzが良いでしょう。
+-　ファンクションボタンを押して、設定を記録します。
 
-6 short presses - set VFO drive level in USB mode
+## 設定の終了
 
-  - tune to a weak signal
-  - give 4 short presses to the FB to enter the VFO drive level adjustment
-  - the default drive level in USB mode is 8mA
-  - using the tuning pot, try different drive levels (2,4,6,8 mA) for maximum signal to noise ratio
-  - press the FB again to save the setting
-  Extra Note: If the max. drive level of 8mA is still insufficient for USB mode, removal of C91 and C92 may help.
-  These caps attenuate the VFO signal at higher frequencies. They're actually only needed for the analog VFO
-  and can safely be removed if you use the Raduino DDS instead of the analog VFO.
+１秒以上ボタンを押すと“SETTINGS”メニューが終了して、通常のオペレーション・モードに戻ります。
+全ての設定はEEPROMに記録され、スタートアップ時に読み出されます。
 
-#### Tuning Range
 
-7 short presses - set tuning range (min frequency, max frequency, pot span)
+## 設定初期値
 
-  - using the tuning pot, set the minimum tuning frequency and press the FB
-  - using the tuning pot, set the maximum tuning frequency and press the FB again
-  The default pot span is 50 kHz, this is OK for a standard 1-turn pot
-  If you install a multi-turn pot instead you can extend the pot span
-  - using the tuning pot, set the desired pot span
-    recommended value: 50 kHz for a 1-turn pot, 200 kHz for a 10-turn pot
-    (if the radio is mainly used for CW: a pot span of 10-25 kHz is recommended)
-  - press the FB again to save the setting
+設定を初期値に戻すには、電源投入時にファンクションボタンを押し続けます。設定初期値は以下の通りです。
 
-#### Exit Settings
- 
-One long press (>1 second) will exit the SETTINGs menu and return to normal [operating mode](#operating-mode)
-
-All user settings are stored in EEPROM and retrieved during startup.
-
-### Factory Settings
-
-To reset all used settings to "factory" values, press and hold the Function button during power on. The factory settings are:
-
-* VFO calibration value: 0
-* VFO calibration offset (USB): 1500 Hz
-* VFO drive level (LSB): 4mA
-* VFO drive level (USB): 8mA
-* Minimum frequency: 7000 kHz
-* Maximum frequency: 7300 kHz
-* Tuning pot span: 50 kHz
-* Mode LSB for both VFO A and B
-* CW side tone: 800 Hz
-* CW key-type: Straight key
-* Touch sensors: OFF
+* VFO キャリブレーション値: 0
+* VFO キャリブレーション・オフセット (USB): 1500 Hz
+* VFO ドライブレベル (LSB):4mA
+* VFO ドライブレベル (USB):8mA
+* 最小周波数: 7000 kHz
+* 最高周波数: 7300 kHz
+* ポット幅: 50 kHz
+* 運用モード：VFO　A/Bとも LSBモード
+* CW サイドトーン: 800 Hz
+* CW 電鍵タイプ:　ストレートキー
+* タッチセンサー: OFF
 * Auto-space: OFF
 * semiQSK: ON
 * QSK delay: 350 ms
-* Lower scan limit: 7100 kHz
-* Upper scan limit: 7150 kHz
-* Scan step: 1 kHz
-* Scan step delay: 500 ms
+* スキャン下限周波数: 7100 kHz
+* スキャン上限周波数: 7150 kHz
+* スキャン幅: 1 kHz
+* スキャン遅延時間: 500 ms
 
-A warning message "VFO uncalibrated" will be displayed until you recalibrate the VFO again.
+ＶＦＯキャリブレーションを行わないと、“VFO uncalibrated”(VFOのキャリブレーション未実施)の注意メッセージが表示されます。
+
+
