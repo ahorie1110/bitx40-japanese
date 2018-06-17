@@ -101,7 +101,7 @@ You only need to do this once.
 
 2. The Library Manager will be started. Wait until the list of installed libraries is updated:
 
-![libray-install2](jp_library-install2_a.PNG)
+![libray-install2](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/jp_library-install2_a.png)
 
 3. In the search box, enter "pinchangeinterrupt":
 
@@ -109,11 +109,11 @@ You only need to do this once.
 
 4. Select the libary named PinChangeInterrupt by NicoHood, then press "install":
 
-![libray-install4](jp_library-install4_a.PNG)
+![libray-install4](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/jp_library-install4_a.png)
 
 5. Wait until the installation is completed, then press "close":
 
-![libray-install5](jp_library-install5_a.PNG)
+![libray-install5](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/jp_library-install5_a.png)
 
 ## Downloading the sketch
 
