@@ -101,7 +101,7 @@ You only need to do this once.
 
 2. The Library Manager will be started. Wait until the list of installed libraries is updated:
 
-![libray-install2](jp_library-install2.PNG)
+![libray-install2](jp_library-install2_a.PNG)
 
 3. In the search box, enter "pinchangeinterrupt":
 
@@ -109,11 +109,11 @@ You only need to do this once.
 
 4. Select the libary named PinChangeInterrupt by NicoHood, then press "install":
 
-![libray-install4](jp_library-install4.PNG)
+![libray-install4](jp_library-install4_a.PNG)
 
 5. Wait until the installation is completed, then press "close":
 
-![libray-install5](jp_library-install5.PNG)
+![libray-install5](jp_library-install5_a.PNG)
 
 ## Downloading the sketch
 
