@@ -132,30 +132,30 @@ Go to your downloads folder, find the file named "bitx40-master", and double-cli
 
 Click on "Extract":
 
-![download-sketch4](download_sketch4.png)
+![download-sketch4](download_sketch4_JPN.png)
 
 And then "Extract All":
 
-![download-sketch5](download_sketch5.png)
+![download-sketch5](download_sketch5_JPN.png)
 
 Optionally, use the "browse" button to change the location where the files will be extracted to.
 Then press "Extract":
 
-![download-sketch6](download_sketch6.png)
+![download-sketch6](download_sketch6_JPN.png)
 
 A new folder named "bitx40-master" will be created on the location you selected in the previous step:
 
-![download-sketch7](download_sketch7.png)
+![download-sketch7](download_sketch7_JPN.png)
 
 The newly created folder "bitx40-master" contains several files. One of them is named "raduino_v1.27.7.ino". This is the actual Raduino firmware.
 
-![download-sketch8](open_sketch1.png)
+![download-sketch8](open_sketch1_JPN.png)
 
 ## Opening the sketch
 
 In the folder "bitx40-master", locate the file "raduino_v1.27.7.ino" and double-click it:
 
-![open-sketch1](open_sketch1.png)
+![open-sketch1](open_sketch1_JPN.png)
 
 The Arduino IDE will be started:
 
