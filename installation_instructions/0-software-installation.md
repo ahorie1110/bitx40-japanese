@@ -1,19 +1,20 @@
-# INSTALLATION INSTRUCTIONS
-## OVERVIEW
+# インストール・ガイド
+このガイドはPE1NLW・Allardさんが作成されたガイドをJJ1EPE・Akiが翻訳したものです。ご質問などがありましたらjj1epe＠jarl.com(＠は小文字)までどうぞ。
+## 概要
 
-1. [Install](#installing-the-arduino-ide) the Arduino IDE on your PC
+1. [Install](#installing-the-arduino-ide) Arduino IDE をPCにインストールする。
 
-2. [Install](#installing-the-pinchangeinterrupt-library) the PinChangeInterrupt Library on your PC
+2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ”PinChangeInterrupt”をPCにインストールする。
 
-3. [Download](#downloading-the-sketch) the Raduino sketch to your PC
+3. [Download](#downloading-the-sketch)　Raduinoのスケッチ（ソースコード）をPCにダウンロードする。
 
-4. [Open](#opening-the-sketch) the Raduino sketch in your IDE
+4. [Open](#opening-the-sketch) IDEでRaduinoのスケッチを開く。
 
-5. [Compile](#compiling-the-sketch) the Raduino sketch
+5. [Compile](#compiling-the-sketch) Raduinoのスケッチsketchをコンパイルする。
 
-6. Power OFF the radio
+6. Bitx40の電源を切る。
 
-7. Connect the USB cable
+7. USBケーブルをRaduinoのUSBポートに接続する。
 
 8. [Upload](#uploading-the-sketch) the firmware to the Raduino board
 
