@@ -1,5 +1,6 @@
 # インストール・ガイド
 このガイドはPE1NLW・Allardさんが作成されたガイドをJJ1EPE・Akiが翻訳したものです。ご質問などがありましたらjj1epe＠jarl.com(＠は小文字)までどうぞ。
+
 ## 概要
 
 1. [Install](#installing-the-arduino-ide) Arduino IDE をPCにインストールする。
@@ -16,203 +17,199 @@
 
 7. USBケーブルをRaduinoのUSBポートに接続する。
 
-8. [Upload](#uploading-the-sketch) the firmware to the Raduino board
+8. [Upload](#uploading-the-sketch) ファームウエアをRaduinoボードにアップロード（書き込む）する。
 
-9. Disconnect the USB cable
+9. USBケーブルを外す。
 
-10. Power ON the radio
+10. Bitx40の電源を入れる。
 
-## Installing the Arduino IDE
+## Arduino IDEのインストール
 
-The Arduino IDE (Integrated Development Environment) is a piece of software that is needed to "compile" the software and then upload it to the Arduino microcontroller chip.
-The Raduino software (or "sketch") is written in C (a programming language). The program statements in the sketch must be "translated" to digital instruction codes that the Arduino microcontroller can understand and execute. This translation process is called "compiling".
+Arduino IDE（統合開発環境）は、ソフトウェアを"コンパイル"してArduinoマイクロコントローラチップにアップロード（書き込む）するために必要なソフトウェアです。 Raduinoソフトウェア（または「スケッチ」）はC（プログラミング言語）で書かれています。スケッチ内のプログラム文は、Arduinoマイクロコントローラが理解し実行できるデジタル命令コードに「変換」されていなければなりません。この変換プロセスを「コンパイル」と呼びます。
 
-The Arduino IDE software can be downloaded for free from https://www.arduino.cc/en/Main/Software
-Click on the link 'Windows Installer, for Windows XP and up':
-
+Arduino IDEソフトウェアは、https://www.arduino.cc/en/Main/Software から無料でダウンロードできます。”indows Installer, for Windows XP and up”のリンクをクリックしてください。
+ 
 ![IDEinstall1](IDEinstall1.png)
 
-Then click on 'just download':
+次に 'just download'　をクリックします:
 
 ![IDEinstall2](IDEinstall2.png)
 
-Save the downloaded file and execute it.
-Do you want to allow this app to make changes to your device? Click 'YES'.
+ダウンロードしたファイルを保存して実行します。 “このアプリで端末を変更できるようにしますか？ ”では「はい」をクリックします。
 
-Accept the License Agreement:
+使用許諾契約に同意します:
 
 ![IDEinstall3](IDEinstall3.png)
 
-Leave all checkboxes on, just press 'Next':
+全てのチェックボックスをそのままの設定にしておき、'Next'　をクリックします:
 
 ![IDEinstall3a](IDEinstall3a.png)
 
-Leave the Destination Folder as is, just press 'Install':
+保存先フォルダもそのままにしておき　“Install”　をクリックします：
 
 ![IDEinstall4](IDEinstall4.png)
 
-The installation will start, it will take a minute or so to extract and install all files:
+インストールが開始され、すべてのファイルを展開してインストールするのに1分ほどかかります：
 
 ![IDEinstall5](IDEinstall5.png)
 
-When the installation is completed, press "Close":
+インストールが完了したら“Close”をクリックします：
 
 ![IDEinstall6](IDEinstall6.png)
 
-A new Arduino icon has been created on your desktop. Double-click it to start the IDE:
+新しくArduinoアイコンがデスクトップに作成されますので、アイコンをダブルクリックしてIDEを起動します：
 
 ![IDEinstall7](IDEinstall7.PNG)
 
-The IDE software will start:
+IDEが起動します：
 
 ![IDEinstall8](jp_IDEinstall8.PNG)
 
-When the IDE is ready, change the editer language to Japanese.
-Go to "File" => "Preferences":
+IDEが起動したら、使用言語を日本語に変更します。
+"File" => "Preferences"に移動します：
 
 ![change-language](jp-change-language.png)
 
-Set the editer language to Japanese:
+“Editor Language”からプルダウンで“日本語”を選択します：
 
 ![change-language2](jp-change-language2.png)
 
-Close the IDE program and restart it to effectuate the language change.
+ここで一度IDEを終了し、言語の変更を有効にするために、再起動します：
+メニューが日本語に変わります：
 
-When it is ready, go to "Tools" => "Board:" => select Arduino Nano:
+次ぎに、書き込むデバイスの選択のために、”ツール”=>”ボード”=> “Arduino Nano”を選択します：
 
 ![IDEinstall9](jp_IDEinstall9.png)
 
-Then go to "Tools" => "Processor:" => select ATmega328P:
+次に “ツール”から “プロセッサ“ => “ ATmega328P”を選択します：
 
 ![IDEinstall10](jp_IDEinstall10.png)
 
-Then go to "Tools" => "Programmer:" => select AVRISP mkii:
+続いて “ツール”から “書込装置“ => “AVRISP mkii”を選択します：
 
 ![IDEinstall11](jp_IDEinstall11.png)
 
-## Installing the PinChangeInterrupt Library
+## ライブラリ ”PinChangeInterrupt” のインストール
 
-This sketch version requires the library ["PinChangeInterrupt"](https://playground.arduino.cc/Main/PinChangeInterrupt) for interrupt handling.
-This is a non-standard library (it is not installed by default). Execute the following steps to install it onto your PC.
-You only need to do this once.
+このスケッチのバージョンでは、割り込み処理のためにライブラリ "PinChangeInterrupt"が必要です[pinChangeInterrupt"](https://playground.arduino.cc/Main/PinChangeInterrupt) 。
+これは標準のライブラリではありません（デフォルトではインストールされていません）。 PCにインストールするには、次の手順で行います。
+これは１回行うだけです。ult).
 
-1. Go to 'Sketch' => 'Include Library' => 'Manage Libraries...':
+1.メニューの　“スケッチ”　から “ライブラリをインクルード” => “ライブラリを管理”　を選択します：
 
 ![libray-install1](jp_library-install1.PNG)
 
-2. The Library Manager will be started. Wait until the list of installed libraries is updated:
+2.ライブラリ・マネージャーが起動します。すでにインストールされているライブラリが表示されるまで待ちます：
 
 ![libray-install2](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/jp_library-install2_a.png)
 
-3. In the search box, enter "pinchangeinterrupt":
+3.　検索ボックスで "pinchangeinterrupt"　を入力します:
 
 ![libray-install3](jp_library-install3.PNG)
 
-4. Select the libary named PinChangeInterrupt by NicoHood, then press "install":
+4.　“Pin Change Interrupt by NicoHood” という名前のライブラリを選択し、 "インストール" をクリックします:
 
 ![libray-install4](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/jp_library-install4_a.png)
 
-5. Wait until the installation is completed, then press "close":
+5.　インストールが完了するまで待ち、完了したら“閉じる”をクリックします：
 
 ![libray-install5](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/jp_library-install5_a.png)
 
-## Downloading the sketch
+## スケッチのダウンロード
 
-On the github page, click the green button "Clone or download":
+“github” のページで緑色の "Clone or download"ボタンをクリックします：
 
 ![download-sketch1](download_sketch1.png)
 
-Then click on 'download ZIP':
+'download ZIP'をクリックします:
 
 ![download-sketch2](download_sketch2.png)
 
-The file will be downloaded to the download folder on your PC.
-Go to your downloads folder, find the file named "bitx40-master", and double-click it:
+ファイルは、PCのダウンロードフォルダにダウンロードされます。
+ダウンロードフォルダに移動して"bitx40-master"という名前のファイルを探してダブルクリックします：
 
 ![download-sketch3](download_sketch3.png)
 
-Click on "Extract":
+"展開" をクリックします:
 
 ![download-sketch4](download_sketch4_JPN.png)
 
-And then "Extract All":
+次に "全て展開" をクリックします:
 
 ![download-sketch5](download_sketch5_JPN.png)
 
-Optionally, use the "browse" button to change the location where the files will be extracted to.
-Then press "Extract":
+必要に応じて、 "Browse"ボタンを使用して、ファイルが展開される場所を変更します。
+次に、"展開"　を押します:
 
 ![download-sketch6](download_sketch6_JPN.png)
 
-A new folder named "bitx40-master" will be created on the location you selected in the previous step:
+上の手順で選択した場所に「bitx40-master」という名前の新しいフォルダが作成されます：
 
 ![download-sketch7](download_sketch7_JPN.png)
 
-The newly created folder "bitx40-master" contains several files. One of them is named "raduino_v1.27.7.ino". This is the actual Raduino firmware.
+新しく作成されたフォルダ "bitx40-master"には複数のファイルが含まれています。それらの1つは "raduino_v1.27.7.ino"という名前です。これは実際のRaduinoファームウェアです。
 
 ![download-sketch8](open_sketch1_JPN.png)
 
-## Opening the sketch
+## スケッチを開く
 
-In the folder "bitx40-master", locate the file "raduino_v1.27.7.ino" and double-click it:
+フォルダ "bitx40-master"の中から、ファイル"raduino_v1.27.7.ino"を見つけてダブルクリックします：
 
 ![open-sketch1](open_sketch1_JPN.png)
 
-The Arduino IDE will be started:
+ Arduino IDE が起動します:
 
 ![open-sketch1a](jp_IDEinstall8.PNG)
 
-The following message box may appear. Press OK:
+次のメッセージボックスが表示されることがありますが、 OKを押します：
 
 ![open-sketch2](jp_open_sketch2.png)
 
-The sketch will now be opened and the program code will be shown in your IDE:
+スケッチが開き、プログラムコードがIDEに表示されます：
 
 ![open-sketch3](jp_open_sketch3.PNG)
 
-## Compiling the sketch
+## スケッチのコンパイル
 
-In the IDE, press the "verify/compile" button:
+IDEで、下図の“コンパイル” ボタンをクリックします:
 
 ![compile-sketch1](jp_compile_sketch1.png)
 
-Compilation will now start, it may take several minutes to complete:
+コンパイルが開始されます。完了するまでに数分かかる場合があります：
 
 ![compile-sketch2](jp_compile_sketch2.png)
 
-When the compilation is completed following screen will be shown:
+コンパイルが完了すると、次の画面が表示されます：
 
 ![compile-sketch3](jp_compile_sketch3.png)
 
-## Uploading the sketch
+## スケッチのアップロード（書込み）
 
-First power OFF the radio
-Then connect the USB cable.
-The Raduino display will light up because at this time it receives power from the PC via the USB cable - the radio itself will not work though.
+最初にBitx40の電源を切ります。
+次ぎに、PCのUSBポートとBitx40のUSBポートをUSBケーブルを接続します。
+この場合、USBケーブルを介してPCから電源が供給されるため、Raduinoのディスプレイは点灯します。Bitx40自体は動作しません。
 
-In the IDE, press the "upload" button:
+ IDE上で下図の ”アップロード” ボタンをクリックします:
 
 ![upload-sketch1](jp_upload-sketch1.png)
 
-The sketch will first be compiled again, this may take a few minutes:
+スケッチは最初に再度コンパイルされますが、これには数分かかることがあります：
 
 ![upload-sketch1a](jp_upload-sketch1a.png)
 
-Then the sketch will be uploaded to the Arduino, this will take another minute or so:
+そして、スケッチがArduinoにアップロードされます。これにはもう1分ほどかかります：
 
 ![upload-sketch2](jp_upload-sketch2.png)
 
-Uploading is completed:
+アップロードが完了しました：
 
 ![upload-sketch3](jp_upload-sketch3.png)
 
-The Raduino will boot up again, the version number of the new firmware will briefly be shown on the display:
+Raduinoが再び起動し、新しいファームウェアのバージョン番号がディスプレイに短時間表示されます：
 
 ![upload-sketch4](upload-sketch4.png)
 
-Disconnect the USB cable.
+USBケーブルを外します：.
 
-Power ON the radio. The Raduino will boot up.
-
-Enjoy the new firmware. Happy BitX-ing!
-
+Bitx40の電源を入れます。 Raduinoが起動します。
+新しいファームウェアをお楽しみください。 Happy BitX-ing！
