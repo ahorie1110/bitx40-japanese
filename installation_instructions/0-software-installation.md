@@ -27,7 +27,7 @@
 
 Arduino IDE（統合開発環境）は、ソフトウェアを"コンパイル"してArduinoマイクロコントローラチップにアップロード（書き込む）するために必要なソフトウェアです。 Raduinoソフトウェア（または「スケッチ」）はC（プログラミング言語）で書かれています。スケッチ内のプログラム文は、Arduinoマイクロコントローラが理解し実行できるデジタル命令コードに「変換」されていなければなりません。この変換プロセスを「コンパイル」と呼びます。
 
-Arduino IDEソフトウェアは、https://www.arduino.cc/en/Main/Software から無料でダウンロードできます。”indows Installer, for Windows XP and up”のリンクをクリックしてください。
+Arduino IDEソフトウェアは、https://www.arduino.cc/en/Main/Software から無料でダウンロードできます。”Windows Installer, for Windows XP and up”のリンクをクリックしてください。
  
 ![IDEinstall1](IDEinstall1.png)
 
@@ -138,7 +138,7 @@ IDEが起動したら、使用言語を日本語に変更します。
 
 ![download-sketch5](download_sketch5_JPN.png)
 
-必要に応じて、 "Browse"ボタンを使用して、ファイルが展開される場所を変更します。
+必要に応じて、 ”参照”　ボタンを使用して、ファイルが展開される場所を変更します。
 次に、"展開"　を押します:
 
 ![download-sketch6](download_sketch6_JPN.png)
