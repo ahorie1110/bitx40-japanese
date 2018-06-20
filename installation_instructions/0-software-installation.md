@@ -3,7 +3,7 @@
 
 ## 概要
 
-1. Arduino IDE をPCに[インストール](#arduino-ide)する。
+1. Arduino IDE をPCに[インストール](#arduino-ideのインストール)する。
 
 2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ”PinChangeInterrupt”をPCにインストールする。
 
@@ -23,7 +23,7 @@
 
 10. Bitx40の電源を入れる。
 
-## Arduino IDE
+## Arduino IDEのインストール
 
 Arduino IDE（統合開発環境）は、ソフトウェアを"コンパイル"してArduinoマイクロコントローラチップにアップロード（書き込む）するために必要なソフトウェアです。 Raduinoソフトウェア（または「スケッチ」）はC（プログラミング言語）で書かれています。スケッチ内のプログラム文は、Arduinoマイクロコントローラが理解し実行できるデジタル命令コードに「変換」されていなければなりません。この変換プロセスを「コンパイル」と呼びます。
 
