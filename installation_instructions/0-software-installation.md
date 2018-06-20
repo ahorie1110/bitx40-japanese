@@ -3,7 +3,7 @@
 
 ## 概要
 
-1. Arduino IDE をPCに[インストール](#Arduino-IDE)する。
+1. Arduino IDE をPCに[インストール](#Arduino IDE)する。
 
 2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ”PinChangeInterrupt”をPCにインストールする。
 
