@@ -1,4 +1,4 @@
-## Raduino_v1.27対応 ハードウエア改造ガイド　(作成中)
+## Raduino_v1.27対応 ハードウエア改造ガイド
 このガイドはPE1NWL･Allardさんが作成されたガイドをJJ1EPE･Akiが翻訳したものです。ご質問などありましたらjj1epe＠jarl.comまでどうぞ（＠は小文字）。
 
 【重要】　このスケッチ（ソフトウエア）のバージョンは割込み処理のため ["PinChangeInterrupt"](https://playground.arduino.cc/Main/PinChangeInterrupt) のライブラリが必要です。このスケッチをコンパイルする前に、お使いのIDEにこのライブラリを[インストール](library-install.md)してください。
