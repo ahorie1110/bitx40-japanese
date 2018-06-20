@@ -7,11 +7,11 @@
 
 2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ "PinChangeInterrupt” をPCに[インストール](#ライブラリ- pinchangeinterrupt-のインストール)する。
 
-3. [Download](#downloading-the-sketch)　Raduinoのスケッチ（ソースコード）をPCに[ダウンロード](#スケッチのダウンロード)する。
+3. Raduinoのスケッチ（ソースコード）をPCに[ダウンロード](#スケッチをダウンロード)する。
 
-4. [Open](#opening-the-sketch) IDEでRaduinoのスケッチを開く。
+4. (#opening-the-sketch) IDEでRaduinoのスケッチを[開く](#スケッチを開く) 。
 
-5. [Compile](#compiling-the-sketch) Raduinoのスケッチsketchをコンパイルする。
+5. [Compile](#compiling-the-sketch) Raduinoのスケッチsketchを[コンパイル](#スケッチをコンパイルする)する。
 
 6. Bitx40の電源を切る。
 
