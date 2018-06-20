@@ -5,7 +5,7 @@
 
 1. Arduino IDE をPCに[インストール](#arduino-ideのインストール)する。
 
-2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ”PinChangeInterrupt”をPCに[インストール](#ライブラリ- "pinchangeinterrupt"-のインストール)する。
+2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ "PinChangeInterrupt” をPCに[インストール](#ライブラリ- pinchangeinterrupt-のインストール)する。
 
 3. [Download](#downloading-the-sketch)　Raduinoのスケッチ（ソースコード）をPCにダウンロードする。
 
