@@ -7,7 +7,7 @@
 
 2. [Install](#installing-the-pinchangeinterrupt-library) ライブラリ "PinChangeInterrupt” をPCに[インストール](#ライブラリ- pinchangeinterrupt-のインストール)する。
 
-3. [Download](#downloading-the-sketch)　Raduinoのスケッチ（ソースコード）をPCにダウンロードする。
+3. [Download](#downloading-the-sketch)　Raduinoのスケッチ（ソースコード）をPCに[ダウンロード](#スケッチのダウンロード)する。
 
 4. [Open](#opening-the-sketch) IDEでRaduinoのスケッチを開く。
 
