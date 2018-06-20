@@ -8,7 +8,7 @@
 ![Table of hardware modifications](https://github.com/ahorie1110/bitx40-japanese/blob/master/hard.jpg)
 
 ## 10-TURN TUNING POT
-(10回転チューニング・ポット)
+（10回転チューニング・ポット）
 
 キットに付属のチューニング・ポットは１回転しかできず、１回転でチューニングできる周波数スパンの初期値は50KHzです。
 代わりに10回転できるチューニング・ポット（ポテンション・メータ）を使用すれば7MHz帯全体を容易にチューニングできるよう1回転当たりの周波数スパンを拡げることができます。
