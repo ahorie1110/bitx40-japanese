@@ -12,7 +12,7 @@ BITX40 Raduio用スケッチ
 
 **Note 1:** v1.20以降、SI5351ライブラリをダウンロードしてインストールする必要がなくなったため、 現在はSI5351を駆動するための最小限のルーチンがス　ケッチに組み込まれています。
 
-**Note 2:** v1.27以降、ライブラリ[”PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt) は割込み処理に必要になりました。コンパイルする前にIDEにこのライブラリを[インストール](library-install.md)してください。
+**Note 2:** v1.27以降、ライブラリ[”PinChangeInterrupt”](https://playground.arduino.cc/Main/PinChangeInterrupt) は割込み処理に必要になりました。コンパイルする前にIDEにこのライブラリを[インストール](https://github.com/ahorie1110/bitx40-japanese/blob/master/installation_instructions/0-software-installation.md#%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA-pinchangeinterrupt-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)してください。
 
 # ご寄付のお願い
 もし、このソフトウェアを気に入っていただけましたら、知的障害や自閉症の子供のための施設に滞在している私の息子の家に小額でも結構ですのでご寄付いただければ幸いです。ご寄付いただいた浄財は、改良されたおもちゃ、三輪車、トランポリンまたはスイング等に使用させていただきます。このグループの6人の青少年から心より感謝致します。もし、このソフトウェアを気に入っていただけましたら、知的障害や自閉症の子供のための施設に滞在している私の息子の家に小額でも結構ですのでご寄付いただければ幸いです。ご寄付いただいた浄財は、改良されたおもちゃ、三輪車、トランポリンまたはスイング等に使用させていただきます。このグループの6人の青少年から心より感謝致します。
