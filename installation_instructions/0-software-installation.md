@@ -31,13 +31,13 @@ Arduino IDEソフトウェアは、https://www.arduino.cc/en/Main/Software か�
  
 ![IDEinstall1](IDEinstall1.png)
 
-次に ”just download” をクリックします。
+次に ”JUST DOWNLOAD” をクリックします。
 
 ![IDEinstall2](IDEinstall2.png)
 
 ダウンロードしたファイルを保存して実行します。 “このアプリで端末を変更できるようにしますか？” では「はい」をクリックします。
 
-使用許諾契約に同意します。
+"I agree" をクリックして使用許諾契約に同意します。
 
 ![IDEinstall3](IDEinstall3.png)
 
