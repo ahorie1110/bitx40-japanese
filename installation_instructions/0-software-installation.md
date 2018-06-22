@@ -212,7 +212,7 @@ Raduinoが再び起動し、新しいファームウェアのバージョン番�
 
 ![upload-sketch4](upload-sketch4.png)
 
-USBケーブルを外します。.
+USBケーブルを外します。
 
 Bitx40の電源を入れます。 Raduinoが起動します。
 新しいファームウェアをお楽しみください。 Happy BitX-ing！
