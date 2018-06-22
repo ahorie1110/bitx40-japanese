@@ -35,7 +35,7 @@ Arduino IDEソフトウェアは、https://www.arduino.cc/en/Main/Software か�
 
 ![IDEinstall2](IDEinstall2.png)
 
-ダウンロードしたファイルを保存して実行します。 “このアプリで端末を変更できるようにしますか？” では「はい」をクリックします。
+ダウンロードしたファイルを保存して実行します。 “Do you want to allow this app to make changes to your device?" (このアプリで端末を変更できるようにしますか？) では「はい」をクリックします。
 
 "I Agree" をクリックして使用許諾契約に同意します。
 
